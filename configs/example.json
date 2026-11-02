@@ -1,0 +1,15 @@
+{
+  "name": "Your territory scenario",
+  "dataset": "data/your_city_v1",
+  "assignment": "data/your_city_v1/initial_assignment.csv",
+  "hc": 8,
+  "tolerance": [
+    0.2,
+    0.2,
+    0.15
+  ],
+  "distance_cap_km": 90.9,
+  "distance_mode": "induced_directed_road",
+  "search_seconds": 30,
+  "objective": "minimize_maximum_internal_road_span"
+}

@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "territory-planner"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "scipy==1.14.1", "pandas>=2,<3", "networkx>=3,<4", "openpyxl>=3.1,<4"]
+
+[project.scripts]
+territory-plan = "territory_planner.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
